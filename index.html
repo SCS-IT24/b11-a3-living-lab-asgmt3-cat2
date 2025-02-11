@@ -11,8 +11,9 @@
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 
+
 <style>
-    .font-sora> {
+    .font-sora > {
   font-family: "Sora", serif;
 }
 </style>
@@ -23,6 +24,8 @@
         extend: {
           colors: {
             clifford: '#da373d',
+            'btn-primary': '#accent',
+            'bg-btn-primary':'rgb(23, 152, 0)',
           },
         },
       },
@@ -30,8 +33,61 @@
   </script>
 </head>
 <body class="font-sora">
-  <header></header> 
-   
+  <header class="md:container md:mx-auto">
+    <nav>
+        <div class="navbar bg-base-100">
+            <div class="flex-1">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li><a>Product</a></li>
+                  <li><a>Services</a></li>
+                  <li><a>Contact Us</a></li>
+                </ul>
+              </div>
+              <div><img src="c2-assets/logo-header.png" alt=""></div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Product</a></li>
+                <li><a>Services</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end hidden gap-5 lg:flex">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+              <a class="btn btn-outline border border-2px border-green-100 rounded-lg">Login</a>
+              <a class="btn btn-primary text-white rounded-lg">Register</a>
+            </div>
+          </div>
+      </nav> 
+      <section class="grid grid-row-1 gap-12 mt-24">
+        <div>
+            <h2 class="text-5xl font-bold text-center">Freshness <span class="text-green-500">You Can</span> <br> <span class="text-green-500">Count</span> On, Prices You’ll Love!</h2>
+            <br>
+            <p class="text-md font-400 text-center">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+          </div>
+          <div class="">
+            <img src="c2-assets/hero-vegetables.png" alt="">
+          </div>
+      </section>
+  </header> 
   <main></main>
 
   <footer></footer>
